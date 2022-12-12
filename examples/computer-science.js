@@ -63,10 +63,13 @@ var modules = [
   {id: 'm7', type: 'module', name: '345: Analysis of Discrete Structures'},
   {id: 'm8', type: 'module', name: '352: System Programming and Unix'},
 
+  {id: 'm10', type: 'module', name: '125: Calculus I'},
+  {id: 'm11', type: 'module', name: '129: Calculus II'},
 ];
 
 var tracks = [
   {id: 't1', type: 'track', name: 'Computer Science'},
+  {id: 't2', type: 'track', name: 'Mathematics'},
 ];
 
 var institutions = [
@@ -175,6 +178,7 @@ var relationships = [
   {id: 'r1047', type: 'belongs_to', sourceId: '47', targetId: 'm8'},
 
   {id: 'r1048', type: 'belongs_to', sourceId: 't1', targetId: 'Starfleet-Academy'},
+  {id: 'r1049', type: 'belongs_to', sourceId: 't2', targetId: 'Starfleet-Academy'},
   
   {id: 'r1051', type: 'belongs_to', sourceId: 'm1', targetId: 't1'},
   {id: 'r1052', type: 'belongs_to', sourceId: 'm2', targetId: 't1'},
@@ -184,6 +188,8 @@ var relationships = [
   {id: 'r1056', type: 'belongs_to', sourceId: 'm6', targetId: 't1'},
   {id: 'r1057', type: 'belongs_to', sourceId: 'm7', targetId: 't1'},
   {id: 'r1058', type: 'belongs_to', sourceId: 'm8', targetId: 't1'},
+  {id: 'r1059', type: 'belongs_to', sourceId: 'm10', targetId: 't2'},
+  {id: 'r1060', type: 'belongs_to', sourceId: 'm11', targetId: 't2'},
 ]
 
 // =====
